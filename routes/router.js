@@ -6,7 +6,7 @@ const gamesRoute=require('./api/gamesRoute');
 const singleRoute=require('./api/singleRoute');
 
 router.get('/games',gamesRoute);
-router.get('/games',singleRoute);
+router.get('/games/:id',singleRoute);
 
 router.get('/',(req,res)=>{
     res.render('pages/home',{
